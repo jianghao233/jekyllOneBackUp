@@ -1,0 +1,106 @@
+title:            秋风清
+description:      假装描述一下
+disqus_shortname: collinsyu # put your disqus here
+reading_time:     true # if true, shows the estimated reading time for a post
+words_per_minute: 200
+logo:             images/logo.png # logo visible in the topbar
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+# url: http://aronbordin.com/neo-hpstr-jekyll-theme
+
+# draw your top menu here
+# each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
+menu:
+  - title: '首页'
+    url: '/'
+  - title: 'github'
+    url: 'https://github.com/collinsyu'
+  - title: '标签'
+    url: '/tags'
+  - title: '分类'
+    url: '/categories'
+    type: 'categories'
+  - title: '收藏夹'
+    url: '#'
+    submenu:
+      - title: '代码高亮显示'
+        url: '/intro/code-highlighting-post/'
+      - title: '示例'
+        url: '/intro/sample-post/'
+      - title: '一些书籍整理'
+        url: '/intro/booklist/'
+
+# Owner/author information
+owner:
+  name:           秋风清
+  site:           http://www.masteryu.site/
+  avatar:         images/avatar.jpg
+  bio:            "前端新人 in EI."
+  email:          yuhaiqing124@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:  # if no twitter in this config, the twitter follow button will be removed
+  facebook:
+  github: collinsyu
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr:
+  # google plus id, include the '+', eg +AronBordin
+  google_plus:    +yourid
+
+social:
+  - title: "github"
+    url: "https://github.com/collinsyu"
+  - title: "linkedin"
+    url: "https://br.linkedin.com/profile/view?id=180237189"
+  - title: "youtube"
+    url: "#"
+# Background image to be tiled on all pages
+background:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Shanghai
+future:      true
+highlighter: rouge
+markdown:    kramdown
+gems:
+  - jekyll-sitemap
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+# if true, shows the floatting share buttons
+float_share: true
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
